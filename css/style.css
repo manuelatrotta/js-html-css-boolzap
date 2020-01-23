@@ -48,8 +48,7 @@ body{
 .info-user{
   width: 50%;
   height: 100%;
-  background-color: purple;
-  border: 1px solid black;
+  background-color: #d7dbd8;
   display: flex;
   justify-content:flex-start;
   align-items: center;
