@@ -50,9 +50,16 @@ body{
   height: 100%;
   background-color: purple;
   border: 1px solid black;
+  justify-content: flex-end;
 }
+
 /*img-user*/
 .img-user{
   width: 20%;
   border-radius: 50%;
+}
+/*general-icons*/
+.general-icons{
+  color: grey;
+  width: 10%;
 }
