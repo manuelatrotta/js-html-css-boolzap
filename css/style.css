@@ -58,7 +58,6 @@ body{
 .main{
   width: 100%;
   height: 60%;
-  background-color: green;
 }
 .scroll_bar_y{
   overflow-y: scroll;
@@ -77,6 +76,10 @@ body{
 }
 .border_bot_grey{
   border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+}
+.btn_white{
+  background-color: white;
 }
 
 .flex-end{
