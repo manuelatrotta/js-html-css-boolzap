@@ -38,7 +38,8 @@ body{
   background-color: orange;
   border: 2px solid black;
 }
-/*general container-grey*/
+
+/*general container-mini*/
 .container-mini{
   width: 100%;
   height: 20%;
@@ -55,6 +56,9 @@ body{
   width: 100%;
   height: 60%;
   background-color: green;
+}
+.scroll_bar_y{
+  overflow-y: scroll;
 }
 /*info-user*/
 .info-user{
