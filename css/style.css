@@ -71,8 +71,14 @@ body{
   display: flex;
   justify-content:flex-start;
   align-items: center;
-
 }
+.width_97{
+  width: 97%;
+}
+.border_bot_grey{
+  border-bottom: 1px solid grey;
+}
+
 .flex-end{
   justify-content: flex-end;
 }
@@ -111,7 +117,4 @@ body{
   width: 90%;
   height: 5vh;
   margin: 5%;
-}
-.margin_r5{
-  margin-right: 5%;
 }
