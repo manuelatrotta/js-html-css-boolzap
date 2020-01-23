@@ -21,6 +21,7 @@ body{
 .marg_bot_3{
   margin-bottom: 3%;
 }
+
 /*wrapper*/
 .wrapper{
   width: 90%;
@@ -38,12 +39,15 @@ body{
   border: 2px solid black;
 }
 /*general container-grey*/
-.container-grey{
+.container-mini{
   width: 100%;
   height: 20%;
   background-color: white;
   display: flex;
   flex-direction: row;
+}
+.bt_blue{
+  background-color: #24c1ed;
 }
 
 /*main*/
@@ -80,7 +84,7 @@ body{
 /*icon_bell*/
 .icon_bell{
   font-size: 7vh;
-  color: #5fb9b0;
+  color: #24c1ed;
   text-align: center;
   vertical-align:middle;
   padding: 3%;
