@@ -99,3 +99,9 @@ body{
   padding:5%;
   color: grey;
 }
+/*chat-search*/
+.input-search{
+  width: 90%;
+  height: 5vh;
+  margin: 5%;
+}
