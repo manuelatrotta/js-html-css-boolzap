@@ -76,6 +76,18 @@ body{
   width: 20%;
   font-size: 5vh;
 }
+/*icon_bell*/
+.icon_bell{
+  font-size: 7vh;
+  color: #5fb9b0;
+  text-align: center;
+  vertical-align:middle;
+  padding: 3%;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+  background-color: #afead4;
+}
 /*name-user*/
 .name-user{
   padding: 5%;
