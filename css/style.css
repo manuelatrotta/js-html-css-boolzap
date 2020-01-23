@@ -15,7 +15,12 @@ body{
 .font_10{
   font-size: 2.2vh;
 }
-
+.grey{
+  color: grey;
+}
+.marg_bot_3{
+  margin-bottom: 3%;
+}
 /*wrapper*/
 .wrapper{
   width: 90%;
@@ -40,12 +45,7 @@ body{
   display: flex;
   flex-direction: row;
 }
-/*container-blue*/
-.container-blue{
-  width: 100%;
-  height: 20%;
-  background-color: blue;
-}
+
 /*main*/
 .main{
   width: 100%;
@@ -68,6 +68,7 @@ body{
 /*img-user*/
 .img-user{
   width: 15vh;
+  margin: 3%;
   border-radius: 50%;
 }
 /*general-icons*/
@@ -83,6 +84,7 @@ body{
   text-align: center;
   vertical-align:middle;
   padding: 3%;
+  margin: 3%;
   width: 15vh;
   height: 15vh;
   border-radius: 50%;
@@ -90,6 +92,6 @@ body{
 }
 /*name-user*/
 .name-user{
-  padding: 5%;
+  padding:5%;
   color: grey;
 }
