@@ -33,13 +33,13 @@ body{
 }
 /*container*/
 .container{
-  width: 60%;
+  width: 70%;
   height: 100vh;
   background-color: orange;
   border: 2px solid black;
 }
-.widht_40{
-  width: 40%;
+.widht_30{
+  width: 30%;
 }
 
 /*general container-mini*/
@@ -58,6 +58,10 @@ body{
 .main{
   width: 100%;
   height: 60%;
+}
+.btn_wts{
+  background-image: url(../img/btn_wts.jpg);
+  background-size: contain;
 }
 .scroll_bar_y{
   overflow-y: scroll;
