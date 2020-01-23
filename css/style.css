@@ -33,10 +33,13 @@ body{
 }
 /*container*/
 .container{
-  width: 50%;
+  width: 60%;
   height: 100vh;
   background-color: orange;
   border: 2px solid black;
+}
+.widht_40{
+  width: 40%;
 }
 
 /*general container-mini*/
