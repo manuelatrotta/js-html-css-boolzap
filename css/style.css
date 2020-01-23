@@ -24,14 +24,14 @@ body{
   background-color: orange;
   border: 2px solid black;
 }
-/*header-top*/
-.header-top{
+/*general container-grey*/
+.container-grey{
   width: 100%;
   height: 20vh;
   background-color: white;
 }
-/*header-bottom*/
-.header-bottom{
+/*container-blue*/
+.container-blue{
   width: 100%;
   height: 20vh;
   background-color: blue;
@@ -39,6 +39,6 @@ body{
 /*main*/
 .main{
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   background-color: green;
 }
