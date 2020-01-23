@@ -6,6 +6,14 @@
 body{
   background-color: red;
   display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+/*general features*/
+.black{
+  color: black;
+}
+.font_10{
+  font-size: 2.2vh;
 }
 
 /*wrapper*/
@@ -67,4 +75,9 @@ body{
   color: grey;
   width: 20%;
   font-size: 5vh;
+}
+/*name-user*/
+.name-user{
+  padding: 5%;
+  color: grey;
 }
