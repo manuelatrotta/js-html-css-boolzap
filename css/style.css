@@ -11,7 +11,7 @@ body{
 /*wrapper*/
 .wrapper{
   width: 90%;
-  height: 50vh;
+  height: 100vh;
   margin: 0 auto;
   transform: translate(-50% -50%);
   background-color: yellow;
@@ -23,7 +23,7 @@ body{
 /*container*/
 .container{
   width: 50%;
-  height:150vh;
+  height: 100vh;
   background-color: orange;
   border: 2px solid black;
 }
