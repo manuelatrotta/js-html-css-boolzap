@@ -29,6 +29,8 @@ body{
   width: 100%;
   height: 20%;
   background-color: white;
+  display: flex;
+  flex-direction: row;
 }
 /*container-blue*/
 .container-blue{
@@ -41,4 +43,11 @@ body{
   width: 100%;
   height: 60%;
   background-color: green;
+}
+/*info-user*/
+.info-user{
+  width: 50%;
+  height: 100%;
+  background-color: purple;
+  border: 1px solid black;
 }
