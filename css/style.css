@@ -3,130 +3,217 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+.template {
+  display: none;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: lightblue;
+}
+.avatar img {
+  width: 100%;
+}
+
+/* typo */
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+body {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
   min-width: 700px;
   background-color: red;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-}
-/*general features*/
-.black{
-  color: black;
-}
-.font_10{
-  font-size: 2.2vh;
-}
-.grey{
-  color: grey;
-}
-.marg_bot_3{
-  margin-bottom: 3%;
+  font-family: 'Lato', sans-serif;
 }
 
-/*wrapper*/
-.wrapper{
-  width: 90%;
-  height: 100vh;
-  margin: 0 auto;
-  background-color: yellow;
-  display: flex;
-  flex-direction: row;
-}
-/*container*/
-.container{
-  width: 70%;
-  height: 100vh;
-  background-color: orange;
-  border: 2px solid black;
-}
-.widht_30{
-  width: 30%;
+.container {
+  width: 80%;
+  height: 90%;
+  background: white;
 }
 
-/*general container-mini*/
-.container-mini{
+.header {
   width: 100%;
-  height: 20%;
+  height: 70px;
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.icons {
+  color: rgb(177, 177, 177);
+}
+.icons i {
+  margin: 0 10px;
+  font-size: 22px;
+}
+
+.col-left {
+  width: 35%;
+  height: 100%;
+}
+
+.disclaimer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(142, 218, 252);
+}
+.disclaimer .disclaimer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.disclaimer .disclaimer-icon i{
+  font-size: 25px;
+  color: rgb(142, 218, 252);
+}
+.contact-search {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(234, 234, 234);
+}
+.wrapper-input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  background: white;
+  border: 1px solid grey;
+}
+.wrapper-input input {
+  border: 0;
+  width: 80%;
+  height: 100%;
+}
+
+.contacts {
+  height: calc( 100% - 190px);
   background-color: white;
-  display: flex;
-  flex-direction: row;
-}
-.bt_blue{
-  background-color: #24c1ed;
-}
-
-/*main*/
-.main{
-  width: 100%;
-  height: 60%;
   overflow-y: scroll;
 }
-.btn_wts{
-  background-image: url(../img/btn_wts.jpg);
-  background-size: contain;
-}
+.contacts-list {
+  list-style: none;
 
-/*info-user*/
-.info-user{
-  width: 50%;
-  height: 100%;
-  background-color: #d7dbd8;
+}
+.contact-element {
   display: flex;
-  justify-content:space-between;
-  align-items: center;
-
-}
-.width_97{
-  width: 97%;
-}
-.width_100{
-  width: 100%;
-}
-.height_40{
-  height: 40px;
-}
-.border_bot_grey{
+  padding: 10px;
   border-bottom: 1px solid grey;
   border-right: 1px solid grey;
 }
-.btn_white{
-  background-color: white;
+.contact-element .avatar {
+  margin-right: 10px;
+}
+.contact-element .contact-info {
+  width: 90%;
+}
+.contact-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/*img-user*/
-.img-user{
-  width: 15vh;
-  margin: 3%;
-  border-radius: 50%;
+.col-right {
+  width: 65%;
+  height: 100%;
+  background-color: white;
 }
-/*general-icons*/
-.general-icons{
-  color: grey;
-  width: 20%;
-  font-size: 5vh;
+.col-right .contact-active {
+  width: 70%;
 }
-/*icon_bell*/
-.icon_bell{
-  font-size: 7vh;
-  color: #24c1ed;
-  text-align: center;
-  vertical-align:middle;
-  padding: 3%;
-  margin: 3%;
-  width: 15vh;
-  height: 15vh;
-  border-radius: 50%;
-  background-color: #afead4;
+.col-right .contact-active small{
+  color: rgb(177, 177, 177);
 }
-/*name-user*/
-.name-user{
-  padding:5%;
-  color: grey;
+.col-right-footer i {
+  margin: 0 10px;
+  font-size: 22px;
+  color: rgb(177, 177, 177);
 }
-/*chat-search*/
-.input-search{
-  width: 90%;
-  height: 5vh;
-  margin: 5%;
+
+.col-right-messages {
+  display: none;
+  height: calc(100% - 140px);
+  padding: 40px;
+  background-image: url(../img/btn_wts.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+.send-message{
+  border: 2px solid rgb(142, 218, 252);
+}
+.col-right-messages.active {
+  display: block;
+}
+
+.message {
+  min-width: 30%;
+  max-width: 60%;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.message-top {
+  display: flex;
+  justify-content: space-between;
+}
+.message-bottom {
+  text-align: right;
+}
+.message.sent {
+  float: right;
+  clear: both;
+  background-color: green;
+}
+
+.message.received {
+  float: left;
+  clear: both;
+  background: white;
+}
+
+.col-right-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: white;
+}
+.col-right-footer .send-message {
+  width: 70%;
 }

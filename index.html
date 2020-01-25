@@ -9,137 +9,273 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <!--mystyle-->
     <link rel="stylesheet" href="css/style.css">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-    <!--wrapper-->
-    <div class="wrapper">
-      <div class="container widht_30">
-        <div class="container-mini">
-          <div class="info-user">
-            <img class="img-user" src="img/user-female.jpg" alt="photo user female">
-          </div>
-          <div class="info-user">
-            <i class="fas fa-circle-notch general-icons"></i>
-            <i class="fas fa-comment-alt general-icons"></i>
-            <i class="fas fa-ellipsis-v general-icons"></i>
-          </div>
-        </div>
-        <div class="container-mini bt_blue">
-          <i class="fas fa-bell-slash icon_bell"></i>
-          <div class="name-user">
-            <h4 class="black marg_bot_3">Ricevi notifiche di nuovi messaggi</h4>
-            <a class="grey" href="#ricevi">Attiva notifiche desktop</a>
-          </div>
-        </div>
-        <div class="main">
-          <nav class="info-user width_97 height_40">
-            <i class="fas fa-search"></i>
-            <input class="input-search" type="text" name="Cerca o inizia una nuova chat" placeholder="Cerca o inizia una nuova chat" value="">
-          </nav>
-          <div class="chat-list btn_white">
-            <div class="info-user width_97 border_bot_grey btn_white">
-              <img class="img-user" src="img/user-man.jpg" alt="photo user man">
-              <div class="name-user">
-                <h4 class="black">Michele</h4>
-                <p class="font_10">Non poteva essere altrimenti</p>
-              </div>
-              <span>17:53</span>
-            </div>
-            <div class="info-user width_97 border_bot_grey btn_white">
-              <img class="img-user" src="img/user-man.jpg" alt="photo user man">
-              <div class="name-user">
-                <h4 class="black">Fabio</h4>
-                <p class="font_10">Non poteva essere altrimenti</p>
-              </div>
-              <span>17:53</span>
-            </div>
-            <div class="info-user width_97 border_bot_grey btn_white">
-              <img class="img-user" src="img/user-man.jpg" alt="photo user man">
-              <div class="name-user">
-                <h4 class="black">Samuele</h4>
-                <p class="font_10">Non poteva essere altrimenti</p>
-              </div>
-               <span>17:53</span>
-            </div>
-            <div class="info-user width_97 border_bot_grey btn_white">
-              <img class="img-user" src="img/user-man.jpg" alt="photo user man">
-              <div class="name-user">
-                <h4 class="black">Alessandro B.</h4>
-                <p class="font_10">Non poteva essere altrimenti</p>
-              </div>
-              <span>17:53</span>
-            </div>
-            <div class="info-user width_97 border_bot_grey btn_white">
-              <img class="img-user" src="img/user-man.jpg" alt="photo user man">
-              <div class="name-user">
-                <h4 class="black">Federico</h4>
-                <p class="font_10">Ultimo accesso oggi alle 15:40</p>
-              </div>
-              <span>17:53</span>
-            </div>
-            <div class="info-user width_97 border_bot_grey btn_white">
-              <img class="img-user" src="img/user-man.jpg" alt="photo user man">
-              <div class="name-user">
-                <h4 class="black">Alessandro L.</h4>
-                <p class="font_10">Non poteva essere altrimenti</p>
-              </div>
-              <span>17:53</span>
-            </div>
-            <div class="info-user width_97 border_bot_grey btn_white">
-              <img class="img-user" src="img/user-man.jpg" alt="photo user man">
-              <div class="name-user">
-                <h4 class="black">Claudia</h4>
-                <p class="font_10">Non poteva essere altrimenti</p>
-              </div>
-              <span>17:53</span>
-            </div>
-            <div class="info-user width_97 border_bot_grey btn_white">
-              <img class="img-user" src="img/user-man.jpg" alt="photo user man">
-              <div class="name-user">
-                <h4 class="black">Davide</h4>
-                <p class="font_10">Non poteva essere altrimenti</p>
-              </div>
-              <span>17:53</span>
-            </div>
-            <div class="info-user width_97 border_bot_grey btn_white">
-              <img class="img-user" src="img/user-man.jpg" alt="photo user man">
-              <div class="name-user">
-                <h4 class="black">Federico</h4>
-                <p class="font_10">Non poteva essere altrimenti</p>
-              </div>
-              <span>17:53</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="container-mini">
-          <div class="info-user">
-            <img class="img-user" src="img/user-man.jpg" alt="photo user man">
-            <div class="name-user">
-              <h4 class="black">Federico</h4>
-              <p class="font_10">Ultimo accesso oggi alle 15:40</p>
-            </div>
-          </div>
-          <div class="info-user">
-            <i class="fas fa-search general-icons"></i>
-            <i class="fas fa-paperclip general-icons"></i>
-            <i class="fas fa-ellipsis-v general-icons"></i>
-          </div>
-        </div>
-        <div class="main btn_wts">
-        </div>
-        <div class="container-mini">
-          <div class="info-user width_100">
-            <i class="far fa-smile general-icons"></i>
-            <nav class="chat-search">
-              <input class="input-search" type="text" name="Cerca o inizia una nuova chat" placeholder="Cerca o inizia una nuova chat" value="">
-            </nav>
-            <i class="fas fa-microphone general-icons"></i>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- container -->
+   <div class="container clearfix">
+     <div class="col-left float-left">
+       <!-- header -->
+       <div class="header">
+         <div class="avatar">
+           <img src="img/user-female.jpg" alt="User profile">
+         </div>
+         <div class="icons">
+           <i class="fas fa-circle-notch"></i>
+           <i class="fas fa-comment-alt"></i>
+           <i class="fas fa-ellipsis-v"></i>
+         </div>
+       </div>
+       <!-- /header -->
 
-  </body>
-</html>
+       <!-- disclaimer -->
+       <div class="disclaimer">
+         <div class="disclaimer-icon">
+           <i class="fa fa-bell-slash" aria-hidden="true"></i>
+         </div>
+         <div class="disclaimer-text">
+           <h3>Ricevi notifiche di nuovi messaggi</h3>
+           <a href="">Attiva notifiche desktop</a>
+         </div>
+       </div>
+       <!-- /disclaimer -->
+
+       <!-- search -->
+       <div class="contact-search">
+         <div class="wrapper-input">
+           <div class="search-icon">
+             <i class="fas fa-search"></i>
+           </div>
+           <input type="text" name="contact-name" value="">
+         </div>
+       </div>
+       <!-- /search -->
+
+       <!-- contacts -->
+       <div class="contacts">
+         <ul class="contacts-list">
+           <li class="contact-element" data-contact="0">
+             <div class="avatar">
+               <img src="img/user-man.jpg" alt="User">
+             </div>
+             <div class="contact-info">
+               <div class="contact-info-top">
+                 <h3 class="contact-name">michele</h3>
+                 <small class="contact-time">17.53</small>
+               </div>
+               <div class="contact-info-bottom">
+                 <small>Non poteva essere altrimenti</small>
+               </div>
+             </div>
+           </li>
+           <li class="contact-element" data-contact="1">
+             <div class="avatar">
+               <img src="img/user-fabio.jpg" alt="Fabio">
+             </div>
+             <div class="contact-info">
+               <div class="contact-info-top">
+                 <h3 class="contact-name">fabio</h3>
+                 <small class="contact-time">17.53</small>
+               </div>
+               <div class="contact-info-bottom">
+                 <small>Non poteva essere altrimenti</small>
+               </div>
+             </div>
+           </li>
+           <li class="contact-element" data-contact="2">
+             <div class="avatar">
+               <img src="img/user-samu.jpg" alt="samuele">
+             </div>
+             <div class="contact-info">
+               <div class="contact-info-top">
+                 <h3 class="contact-name">samuele</h3>
+                 <small class="contact-time">17.53</small>
+               </div>
+               <div class="contact-info-bottom">
+                 <small>Non poteva essere altrimenti</small>
+               </div>
+             </div>
+           </li>
+           <li class="contact-element" data-contact="3">
+             <div class="avatar">
+               <img src="img/user-aleb.jpg" alt="user alessandro B.">
+             </div>
+             <div class="contact-info">
+               <div class="contact-info-top">
+                 <h3 class="contact-name">Alessandro B.</h3>
+                 <small class="contact-time">17.53</small>
+               </div>
+               <div class="contact-info-bottom">
+                 <small>Non poteva essere altrimenti</small>
+               </div>
+             </div>
+           </li>
+           <li class="contact-element" data-contact="4">
+             <div class="avatar">
+               <img src="img/user-alel.jpg" alt="user alessandro l.">
+             </div>
+             <div class="contact-info">
+               <div class="contact-info-top">
+                 <h3 class="contact-name">alessandro l</h3>
+                 <small class="contact-time">17.53</small>
+               </div>
+               <div class="contact-info-bottom">
+                 <small>Non poteva essere altrimenti</small>
+               </div>
+             </div>
+           </li>
+           <li class="contact-element" data-contact="5">
+             <div class="avatar">
+               <img src="img/user-claudia.jpg" alt="user Claudia">
+             </div>
+             <div class="contact-info">
+               <div class="contact-info-top">
+                 <h3 class="contact-name">claudia</h3>
+                 <small class="contact-time">17.53</small>
+               </div>
+               <div class="contact-info-bottom">
+                 <small>Non poteva essere altrimenti</small>
+               </div>
+             </div>
+           </li>
+           <li class="contact-element" data-contact="6">
+             <div class="avatar">
+               <img src="img/user-davide.jpg" alt="user davide">
+             </div>
+             <div class="contact-info">
+               <div class="contact-info-top">
+                 <h3 class="contact-name">davide</h3>
+                 <small class="contact-time">17.53</small>
+               </div>
+               <div class="contact-info-bottom">
+                 <small>Non poteva essere altrimenti</small>
+               </div>
+             </div>
+           </li>
+           <li class="contact-element" data-contact="7">
+             <div class="avatar">
+               <img src="img/user-fede.jpg" alt="user Fede">
+             </div>
+             <div class="contact-info">
+               <div class="contact-info-top">
+                 <h3 class="contact-name">federico</h3>
+                 <small class="contact-time">17.53</small>
+               </div>
+               <div class="contact-info-bottom">
+                 <small>Non poteva essere altrimenti</small>
+               </div>
+             </div>
+           </li>
+
+         </ul>
+       </div>
+       <!-- /contacts -->
+
+     </div>
+
+     <div class="col-right float-left">
+       <!-- header -->
+       <div class="header">
+         <div class="avatar">
+           <img src="img/user-man.jpg" alt="Federico">
+         </div>
+         <div class="contact-active">
+           <h2 class="contact-name">Federico</h2>
+           <small class="contact-time">Ultimo accesso oggi alle 15.40</small>
+         </div>
+         <div class="icons">
+ 					<i class="fas fa-search"></i>
+ 					<i class="fas fa-paperclip"></i>
+ 					<i class="fas fa-ellipsis-v"></i>
+         </div>
+       </div>
+       <!-- /header -->
+
+       <!-- messages -->
+       <div class="col-right-messages active" data-contact="0">
+         <div class="message sent">
+           <div class="message-top">
+             <p class="message-text">Ciao come stai?</p>
+             <i class="fa fa-chevron-down f-right message-options"></i>
+           </div>
+           <div class="message-bottom">
+             <small class="message-time">10:40</small>
+           </div>
+         </div>
+         <div class="message received">
+           <div class="message-top">
+             <p class="message-text">Ciao come stai?</p>
+             <i class="fa fa-chevron-down f-right message-options"></i>
+           </div>
+           <div class="message-bottom">
+             <small class="message-time">10:40</small>
+           </div>
+         </div>
+         <div class="message sent">
+           <div class="message-top">
+             <p class="message-text">Ci vediamo alla festa?</p>
+             <i class="fa fa-chevron-down f-right message-options"></i>
+           </div>
+           <div class="message-bottom">
+             <small class="message-time">10:40</small>
+           </div>
+         </div>
+       </div>
+       <div class="col-right-messages" data-contact="1">
+         <div class="message sent">
+           <div class="message-top">
+             <p class="message-text">Cosa porti?</p>
+             <i class="fa fa-chevron-down f-right message-options"></i>
+           </div>
+           <div class="message-bottom">
+             <small class="message-time">10:40</small>
+           </div>
+         </div>
+         <div class="message received">
+           <div class="message-top">
+             <p class="message-text">Ciao come stai?</p>
+             <i class="fa fa-chevron-down f-right message-options"></i>
+           </div>
+           <div class="message-bottom">
+             <small class="message-time">10:40</small>
+           </div>
+         </div>
+         <div class="message sent">
+           <div class="message-top">
+             <p class="message-text">Ciao come stai?</p>
+             <i class="fa fa-chevron-down f-right message-options"></i>
+           </div>
+           <div class="message-bottom">
+             <small class="message-time">10:40</small>
+           </div>
+         </div>
+       </div>
+ <!-- footer -->
+       <div class="col-right-footer">
+         <div class="col-right-footer-icon">
+ 					<i class="far fa-smile"></i>
+ 				</div>
+         <input type="text" class="send-message">
+         <div class="col-right-footer-icon icon-send">
+ 					<i class="fas fa-paper-plane" aria-hidden="true"></i>
+ 				</div>
+       </div>
+     </div>
+   </div>
+<!--messages-->
+   <div class="template">
+     <div class="message">
+       <div class="message-top">
+         <p class="message-text"></p>
+         <i class="fa fa-chevron-down f-right message-options"></i>
+       </div>
+       <div class="message-bottom">
+         <small class="message-time"></small>
+       </div>
+     </div>
+   </div>
+
+   <script src="js/script.js"></script>
+ </body>
+ </html>
