@@ -3,10 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*general features*/
 .template {
   display: none;
 }
-
 .clearfix::after {
   content: '';
   display: table;
@@ -35,7 +35,7 @@ h3 {
   font-size: 15px;
   margin-bottom: 5px;
 }
-
+/*body*/
 body {
   display: flex;
   justify-content: center;

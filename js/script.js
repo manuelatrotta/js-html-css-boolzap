@@ -4,7 +4,7 @@ $(document).ready(function () {
     sendMessage();
   });
 });
-
+//invio messaggio anche da tastiera enter= 13
 $(document).keydown(function () {
   console.log(event.which);
   if(event.keyCode == 13) {
@@ -20,7 +20,7 @@ function sendMessage() {
     console.log(newMessage);
 
     newMessage.find('.message-text').text(textMessage);
-
+//variabili per inserimento ora esatta
     var data = new Date();
     var hours = addZero(data.getHours());
     var minutes = addZero(data.getMinutes());
@@ -39,4 +39,14 @@ function addZero(number) {
     number = '0' + number;
   }
   return number;
+}
+//ricerca nomi in lista-chat
+//creare una funzione in cui prima nascondo i profili in chat e poi ricerca
+function search(){
+  $('.contact-list' > contact-element).hide();
+  $('.contact-list > avatar').each(function(index)){
+    var searchAvatar;
+    var inputVal = $ ('.search-input').val();
+    console.log(inputVal);
+  }
 }
