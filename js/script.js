@@ -4,7 +4,14 @@ $(document).ready(function () {
     sendMessage();
   });
 });
-//funzione in cui se il messaggio ha una lunghezza !=0 si clona 
+
+$(document).keydown(function () {
+  console.log(event.which);
+  if(event.keyCode == 13) {
+   sendMessage();
+  }
+});
+//funzione in cui se il messaggio ha una lunghezza !=0 si clona
 function sendMessage() {
   var textMessage = $('input.send-message').val();
 
