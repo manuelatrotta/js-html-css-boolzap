@@ -142,6 +142,10 @@ body {
 .contact-element .contact-info {
   width: 90%;
 }
+.contact-element:hover{
+  background-color: rgb(177, 177, 177);
+  cursor: pointer;
+}
 .contact-info-top {
   display: flex;
   justify-content: space-between;
