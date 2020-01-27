@@ -26,6 +26,7 @@ $(document).ready(function () {
     });
   });
 });
+
 //funzione in cui se il messaggio ha una lunghezza !=0 si clona
 function sendMessage() {
   var textMessage = $('input.send-message').val();
@@ -51,6 +52,7 @@ function sendMessage() {
 
   }
 }
+
 //funzione che invia un messaggio automatico come risposta
 function sendResponse() {
   var messageResponse = $('.template .message').clone();
@@ -64,22 +66,6 @@ function sendResponse() {
   $('.col-right-messages.active').append(messageResponse);
 }
 
-//funzione che cerca i nomi nella chatlist mediante pressione dei pulsanti(keyup)
-$('.contact-search input').keyup(function () {
-//variabile in cui salvo il testo immesso e con toLowerCase trasformo tutti in minuscolo
-  var text = $('.contact-search input').val().toLowerCase();
-//.each funziona come un ciclo for
-  $('.contact-element').each(function () {
-    var contactName = $(this).find('.contact-name').text().toLowerCase();
-    //condizione in cui verifichiamo se il testo inserito è presente nei nomi della chat
-    if(contactName.includes(text) == true) {
-      // console.log('incluso');
-      $(this).show();
-    } else {
-      $(this).hide();
-    }
-  });
-});
 //funzione che aggiunge 0
 function addZero(number) {
   if(number < 10) {
