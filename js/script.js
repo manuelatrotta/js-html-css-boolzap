@@ -73,3 +73,21 @@ function addZero(number) {
   }
   return number;
 }
+//funzione che cercare le chat
+//una funzione per mostare quella che viene attivata
+function searchChat() {
+  //each sui nomi della chat
+  $(".contactname").each(function () {
+    var contactname = $(this).text();
+    var string = contactname.toLowerCase();
+    var research = $(".contact-search").val();
+    //indexOf trova l'indice
+    var n = string.indexOf(research.toLowerCase());
+//se l'indice è divero da -1 allora mostra alrimenti nascondi chat
+    if (n !== -1) {
+      $(this).parents(".contact-info").show();
+    } else {
+      $(this).parents(".contact-info").hide();
+    }
+  })
+}
