@@ -29,24 +29,28 @@ function sendMessage() {
     newMessage.find('.message-time').text(time);
     newMessage.addClass('sent');
     $('.col-right-messages').append(newMessage);
-
+    $('.col-right-message.active').append(newMessage);
+    //con setTimeout richiamo la funzione e dopo 2 s parte messaggio automatico
+    setTimeout(sendResponse, 2000);
     $('input.send-message').val('');
   }
 }
-
+//funzione che invia un messaggio automatico come risposta
+function sendResponse() {
+  var messageResponse = $('.template .message').clone();
+  messageResponse.find('.message-text').text('ok');
+  var data = new Date();
+  var hours = addZero(data.getHours());
+  var minutes = addZero(data.getMinutes());
+  var time = hours +':'+ minutes;
+  messageResponse.find('.message-time').text(time);
+  messageResponse.addClass('received');
+  $('.col-right-messages.active').append(messageResponse);
+}
+//funzione che aggiunge 0
 function addZero(number) {
   if(number < 10) {
     number = '0' + number;
   }
   return number;
-}
-//ricerca nomi in lista-chat
-//creare una funzione in cui prima nascondo i profili in chat e poi ricerca
-function search(){
-  $('.contact-list' > contact-element).hide();
-  $('.contact-list > avatar').each(function(index)){
-    var searchAvatar;
-    var inputVal = $ ('.search-input').val();
-    console.log(inputVal);
-  }
 }
