@@ -128,14 +128,15 @@ body {
 }
 .contacts-list {
   list-style: none;
-
 }
+
 .contact-element {
   display: flex;
   padding: 10px;
   border-bottom: 1px solid grey;
   border-right: 1px solid grey;
 }
+
 .contact-element .avatar {
   margin-right: 10px;
 }
@@ -215,11 +216,14 @@ body {
   position: absolute;
   top: 30px;
   right: 0;
+  display: none;
   padding: 10px;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
   background: white;
 }
-
+.message-link.active {
+  display: block;
+}
 .message-link ul {
   list-style:  none;
 }

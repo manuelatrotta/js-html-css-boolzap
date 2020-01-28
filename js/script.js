@@ -73,21 +73,30 @@ function addZero(number) {
   }
   return number;
 }
-//funzione che cercare le chat
-//una funzione per mostare quella che viene attivata
-function searchChat() {
-  //each sui nomi della chat
-  $(".contactname").each(function () {
-    var contactname = $(this).text();
-    var string = contactname.toLowerCase();
-    var research = $(".contact-search").val();
-    //indexOf trova l'indice
-    var n = string.indexOf(research.toLowerCase());
-//se l'indice è divero da -1 allora mostra alrimenti nascondi chat
-    if (n !== -1) {
-      $(this).parents(".contact-info").show();
-    } else {
-      $(this).parents(".contact-info").hide();
-    }
-  })
-}
+//funzione mostra e nascondi i dropdown
+$(document).on('click', '.message-options', function() {
+    $(this).parent().siblings('.message-link').toggleClass('active');
+    $(this).parents('.message').siblings('.message').find('.message-link').removeClass('active');
+  });
+
+  $(document).on('click', '.message-delete', function() {
+      // $(this).parent().parent().parent().remove();
+      $(this).parents('.message').remove();
+    });
+
+    $(document).on('click', '.contact-element', function() {
+      var data = $(this).attr('data-contact');
+      var selector = '.col-right-messages[data-contact="' + data + '"]';
+
+      $('.col-right-messages').removeClass('active');
+      $(selector).addClass('active');
+      $('.contact-element').removeClass('active');
+      $(this).addClass('active');
+
+      var name = $(this).find('.contact-name').text();
+      var time = $(this).find('.contact-time').text();
+      var img = $(this).find('.avatar img').attr('src');
+      $('.col-right .header .contact-active .contact-name').text(name);
+      $('.col-right .header .contact-active .contact-time').text(time);
+      $('.col-right .header .avatar img').attr('src', img);
+    });
