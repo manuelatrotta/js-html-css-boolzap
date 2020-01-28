@@ -186,6 +186,7 @@ body {
 }
 
 .message {
+  position: relative;
   min-width: 30%;
   max-width: 60%;
   padding: 5px;
@@ -210,7 +211,18 @@ body {
   clear: both;
   background: white;
 }
+.message-link {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  padding: 10px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  background: white;
+}
 
+.message-link ul {
+  list-style:  none;
+}
 .col-right-footer {
   display: flex;
   justify-content: space-around;
