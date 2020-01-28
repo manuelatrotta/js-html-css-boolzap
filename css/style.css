@@ -169,7 +169,10 @@ body {
   font-size: 22px;
   color: rgb(177, 177, 177);
 }
-
+.messages-wrapper {
+  height: calc(100% - 140px);
+  overflow-y: scroll;
+}
 .col-right-messages {
   display: none;
   height: calc(100% - 140px);

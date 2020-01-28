@@ -100,3 +100,11 @@ $(document).on('click', '.message-options', function() {
       $('.col-right .header .contact-active .contact-time').text(time);
       $('.col-right .header .avatar img').attr('src', img);
     });
+    // funzione scroll
+  function scrollMessage() {
+     // altezza della conversazione attiva
+    var heightContainer = $('.col-right-messages.active').height();
+    console.log(heightContainer);
+    // sposto scroll del container chats
+    $('.messages-wrapper').scrollTop(heightContainer);
+  }
