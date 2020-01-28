@@ -164,6 +164,17 @@ body {
 .col-right .contact-active small{
   color: rgb(177, 177, 177);
 }
+
+.col-right-messages {
+  display: none;
+  min-height: 100%;
+  padding: 40px;
+  background-color: lightgrey;
+}
+.col-right-messages.active {
+  display: block;
+}
+
 .col-right-footer i {
   margin: 0 10px;
   font-size: 22px;
@@ -180,7 +191,6 @@ body {
   background-image: url(../img/btn_wts.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-y: scroll;
 }
 .send-message{
   border: 2px solid rgb(142, 218, 252);

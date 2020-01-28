@@ -66,13 +66,6 @@ function sendResponse() {
   $('.col-right-messages.active').append(messageResponse);
 }
 
-//funzione che aggiunge 0
-function addZero(number) {
-  if(number < 10) {
-    number = '0' + number;
-  }
-  return number;
-}
 //funzione mostra e nascondi i dropdown
 $(document).on('click', '.message-options', function() {
     $(this).parent().siblings('.message-link').toggleClass('active');
@@ -107,4 +100,12 @@ $(document).on('click', '.message-options', function() {
     console.log(heightContainer);
     // sposto scroll del container chats
     $('.messages-wrapper').scrollTop(heightContainer);
+  }
+
+  //funzione che aggiunge 0
+  function addZero(number) {
+    if(number < 10) {
+      number = '0' + number;
+    }
+    return number;
   }
